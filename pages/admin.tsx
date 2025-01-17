@@ -11,10 +11,10 @@ const Admin = () => {
       const [category, setCategory] = useState("");
       const [image, setImage] = useState("abc");
       const [email, setEmail] = useState("");
-      const [logg, setlogg] = useState(false)
+      // const [logg, setlogg] = useState(false)
       useEffect(() => {
           if(localStorage.getItem('token')){
-            setlogg(true)              
+            // setlogg(true)              
           }
         }, [])
 
@@ -38,54 +38,54 @@ const Admin = () => {
         return true;
       }
 
-      const handleSubmit = async (e) => {
-        e.preventDefault();
+      // const handleSubmit = async (e) => {
+      //   e.preventDefault();
 
-        const checked = check();
+      //   const checked = check();
 
-        if(!checked){
-            return;
-        }
-        const a = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/addBlog`, {
-          title: title,
-          description: description,
-          category: category,
-          image: image,
-          email: email,
-        });
-        const res = await a.data;
-        if (res.success) {
-            toast.success("Email Sent !! Check the Inbox", {
-                position: "bottom-right",
-                autoClose: 1500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-              });
-        }
-        else{
-            toast.error("Email Sent !! Check the Inbox", {
-                position: "bottom-right",
-                autoClose: 1500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-              });
-        }
+      //   if(!checked){
+      //       return;
+      //   }
+      //   const a = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/addBlog`, {
+      //     title: title,
+      //     description: description,
+      //     category: category,
+      //     image: image,
+      //     email: email,
+      //   });
+      //   const res = await a.data;
+      //   if (res.success) {
+      //       toast.success("Email Sent !! Check the Inbox", {
+      //           position: "bottom-right",
+      //           autoClose: 1500,
+      //           hideProgressBar: false,
+      //           closeOnClick: true,
+      //           pauseOnHover: true,
+      //           draggable: true,
+      //           progress: undefined,
+      //           theme: "dark",
+      //         });
+      //   }
+      //   else{
+      //       toast.error("Email Sent !! Check the Inbox", {
+      //           position: "bottom-right",
+      //           autoClose: 1500,
+      //           hideProgressBar: false,
+      //           closeOnClick: true,
+      //           pauseOnHover: true,
+      //           draggable: true,
+      //           progress: undefined,
+      //           theme: "dark",
+      //         });
+      //   }
 
-        setCategory("");
-        setTitle("");
-        setDescription("");
-        setImage("");
-        setEmail("");
-        router.reload();
-      };
+      //   setCategory("");
+      //   setTitle("");
+      //   setDescription("");
+      //   setImage("");
+      //   setEmail("");
+      //   router.reload();
+      // };
   return (
     <div>
       
