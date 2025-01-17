@@ -23,10 +23,10 @@ interface CarouselProps {
 }
 
 type Card = {
-  src: string;
+  imageurl: string;
   title: string;
   category: string;
-  content: React.ReactNode;
+  description: string;
 };
 
 export const CarouselContext = createContext<{
@@ -232,7 +232,7 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              <div className="py-10">{card.description}</div>
             </motion.div>
           </div>
         )}
@@ -258,7 +258,7 @@ export const Card = ({
           </motion.p>
         </div>
         <BlurImage
-          src={card.src}
+          src={card.imageurl}
           alt={card.title}
           fill
           className="object-cover absolute z-10 inset-0"
@@ -271,7 +271,7 @@ export const Card = ({
 export const BlurImage = ({
   height,
   width,
-  src,
+  src: imageurl,
   className,
   alt,
   ...rest
@@ -285,12 +285,12 @@ export const BlurImage = ({
         className
       )}
       onLoad={() => setLoading(false)}
-      src={src}
+      src={imageurl}
       width={width}
       height={height}
       loading="lazy"
       decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
+      blurDataURL={typeof imageurl === "string" ? imageurl : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />
