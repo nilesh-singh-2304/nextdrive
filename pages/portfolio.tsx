@@ -1,5 +1,6 @@
 import React from 'react'
 import { AnimatedBeamMultipleOutputDemo } from '@/components/portfolio'
+import { FloatingDockDemo } from '@/components/dock'
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
       </div>
     </div>
       <AnimatedBeamMultipleOutputDemo />
+      <FloatingDockDemo />
     </div>
   )
 }
