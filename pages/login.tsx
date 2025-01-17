@@ -8,7 +8,7 @@ const Login = () => {
     const [password, setpassword] = useState("")
     const router = useRouter()
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const a = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/login`, {
             email: email,
@@ -49,9 +49,6 @@ const Login = () => {
       <div className="bg-gray-50 font-[sans-serif]">
       <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
         <div className="max-w-md w-full">
-          <a href="javascript:void(0)"><img
-            src="https://readymadeui.com/readymadeui.svg" alt="logo" className='w-40 mb-8 mx-auto block' />
-          </a>
 
           <div className="p-8 rounded-2xl bg-white shadow">
             <h2 className="text-gray-800 text-center text-2xl font-bold">Sign in</h2>
@@ -77,26 +74,11 @@ const Login = () => {
                 </div>
               </div>
 
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center">
-                  <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" />
-                  <label htmlFor="remember-me" className="ml-3 block text-sm text-gray-800">
-                    Remember me
-                  </label>
-                </div>
-                <div className="text-sm">
-                  <a href="jajvascript:void(0);" className="text-blue-600 hover:underline font-semibold">
-                    Forgot your password?
-                  </a>
-                </div>
-              </div>
-
               <div className="!mt-8">
                 <button type="button" onClick={handleSubmit} className="w-full py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
                   Sign in
                 </button>
               </div>
-              <p className="text-gray-800 text-sm !mt-8 text-center">Don't have an account? <a href="javascript:void(0);" className="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Register here</a></p>
             </form>
           </div>
         </div>

@@ -28,7 +28,7 @@ const Contact = () => {
     return true
   }
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const checkk =  check();
     if(!checkk){

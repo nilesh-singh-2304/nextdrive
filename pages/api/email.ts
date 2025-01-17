@@ -5,7 +5,7 @@ const resend = new Resend("re_DJuP9erZ_C2mCpbXYx9mG9SNWuokZsZo4");
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
  if(req.method === 'POST'){
-  const { data, error } = await resend.emails.send({
+  const { error } = await resend.emails.send({
     from: 'Acme <onboarding@resend.dev>',
     to: ['shyaam2304@gmail.com'],
     subject: 'New Query Recieved',
