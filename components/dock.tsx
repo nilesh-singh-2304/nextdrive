@@ -70,7 +70,7 @@ export function FloatingDockDemo() {
     },
   ];
   return (
-    <div className="flex items-center justify-center translate-y-4.25 fixed z-50 w-full">
+    <div className="flex items-center justify-center fixed z-50 w-full">
       <FloatingDock
         mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
