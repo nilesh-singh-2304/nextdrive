@@ -6,7 +6,7 @@ import { AppleCardsCarouselDemo } from '@/components/blogss'
 
 const Blogs = () => {
   return (
-    <div className='' >
+    <div >
 
 <div className=" p-x-8 pt-28 font-[sans-serif]">
       <div className="max-w-xl mx-auto text-center">
