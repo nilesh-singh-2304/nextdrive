@@ -1,39 +1,39 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import axios from 'axios';
-import { toast } from 'react-toastify';
+// import React from 'react'
+// import { useState, useEffect } from 'react';
+// import { useRouter } from 'next/router';
+// import axios from 'axios';
+// import { toast } from 'react-toastify';
 
 const Admin = () => {
-    const [title, setTitle] = useState("");
-    const router = useRouter();
-      const [description, setDescription] = useState("");
-      const [category, setCategory] = useState("");
-      const [image, setImage] = useState("abc");
-      const [email, setEmail] = useState("");
+    // const [title, setTitle] = useState("");
+    // const router = useRouter();
+    //   const [description, setDescription] = useState("");
+    //   const [category, setCategory] = useState("");
+    //   const [image, setImage] = useState("abc");
+    //   const [email, setEmail] = useState("");
       // const [logg, setlogg] = useState(false)
-      useEffect(() => {
-          if(localStorage.getItem('token')){
-            // setlogg(true)              
-          }
-        }, [])
+      // useEffect(() => {
+      //     if(localStorage.getItem('token')){
+      //       // setlogg(true)              
+      //     }
+      //   }, [])
 
-      const check = () => {
-        if(title == '' || description == '' || category == '' || image == '' || email == '' ){
-            toast.error("please fill all fields", {
-                position: "bottom-right",
-                autoClose: 1500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-              });
+      // const check = () => {
+      //   if(title == '' || description == '' || category == '' || image == '' || email == '' ){
+      //       toast.error("please fill all fields", {
+      //           position: "bottom-right",
+      //           autoClose: 1500,
+      //           hideProgressBar: false,
+      //           closeOnClick: true,
+      //           pauseOnHover: true,
+      //           draggable: true,
+      //           progress: undefined,
+      //           theme: "dark",
+      //         });
 
-              return false;
+      //         return false;
               
-        }
+      //   }
 
         return true;
       }
