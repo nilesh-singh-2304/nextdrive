@@ -39,7 +39,7 @@ const Footer = () => {
         });
         const res = await a.data;
         if (res.success) {
-            toast.success("Email Sent !! Check the Inbox", {
+            toast.success("Newsleter Subscribed", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,
@@ -52,7 +52,7 @@ const Footer = () => {
         }
         else{
           console.log(res.err)
-            toast.error("Email Sent !! Check the Inbox", {
+            toast.error("There was some error !!", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,
@@ -105,6 +105,7 @@ const Footer = () => {
         </div>
 
         <p className='text-black text-center text-[15px] mt-6'>© NextDrive India. All rights reserved.</p>
+        <p className='text-black text-center text-[15px] font-bold mt-1'>Created By Nilesh Singh , nileshsingh82004@gmail.com , 9319601021</p>
       </div>
     </footer>
   )

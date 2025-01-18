@@ -6,11 +6,11 @@ const Services = () => {
     <div className="bg-cover pb-10 overflow-x-hidden bg-[url('https://cdn.dribbble.com/users/431269/screenshots/2618770/media/97954b639622028f675b8cac357653ae.gif')]">
       <div className=" overflow-y-auto  ">
 
-<div className=" p-8 mt-20 font-[sans-serif]">
+<div className=" p-8 pt-32 font-[sans-serif]">
       <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-gray-50 text-4xl font-extrabold relative after:absolute after:-bottom-5 after:h-1 after:w-1/2 after:bg-yellow-600 after:left-0 after:right-0 after:mx-auto after:rounded-full">Try using our templates</h2>
-        <div className="mt-12">
-          <p className="text-gray-50 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nunc et tempus blandit, metus mi consectetur felis turpis vitae ligula.</p>
+        <h2 className="text-gray-50 text-4xl font-extrabold relative after:absolute after:-bottom-5 after:h-1 after:w-1/2 after:left-0 after:right-0 after:mx-auto after:rounded-full">Our Expert Services</h2>
+        <div className="mt-8">
+          <p className="text-gray-50 text-lg">At NextDrive, we are committed to providing top-tier services tailored to meet your unique needs. Our team of professionals works closely with you to deliver high-quality solutions, ensuring your satisfaction and success. Explore our wide range of services below.</p>
         </div>
       </div>
     </div>

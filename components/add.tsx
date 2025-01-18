@@ -54,7 +54,7 @@ const Add = () => {
         });
         const res = await a.data;
         if (res.success) {
-            toast.success("Email Sent !! Check the Inbox", {
+            toast.success("Item Added", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,
@@ -66,7 +66,7 @@ const Add = () => {
               });
         }
         else{
-            toast.error("Email Sent !! Check the Inbox", {
+            toast.error("There was some error !!", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,

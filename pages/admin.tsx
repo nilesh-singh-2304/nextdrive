@@ -38,7 +38,7 @@ const Admin = ({ blogs }) => {
     });
     const res = await a.data;
     if (res.success) {
-      toast.success("Email Sent !! Check the Inbox", {
+      toast.success("Content Edited", {
         position: "bottom-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -49,7 +49,7 @@ const Admin = ({ blogs }) => {
         theme: "dark",
       });
     } else {
-      toast.error("Email Sent !! Check the Inbox", {
+      toast.error("There was some error !!", {
         position: "bottom-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -72,7 +72,7 @@ const Admin = ({ blogs }) => {
     });
     const res = await a.data;
     if (res.success) {
-      toast.success("Email Sent !! Check the Inbox", {
+      toast.success("Item Deleted", {
         position: "bottom-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -83,7 +83,7 @@ const Admin = ({ blogs }) => {
         theme: "dark",
       });
     } else {
-      toast.error("Email Sent !! Check the Inbox", {
+      toast.error("There was some error !!", {
         position: "bottom-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -177,7 +177,7 @@ const Admin = ({ blogs }) => {
                       }}
                     >
                       <label htmlFor={`my_modal_${blog._id}`} className="btn">
-                        open modal
+                        Edit
                       </label>
                     </button>
 

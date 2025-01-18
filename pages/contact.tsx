@@ -45,7 +45,7 @@ const Contact = () => {
         });
         const res = await a.data;
         if (res.success) {
-            toast.success("Email Sent !! Check the Inbox", {
+            toast.success("Query Submitted", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,
@@ -58,7 +58,7 @@ const Contact = () => {
         }
         else{
           console.log(res.err)
-            toast.error("Email Sent !! Check the Inbox", {
+            toast.error("Try Again !!", {
                 position: "bottom-right",
                 autoClose: 1500,
                 hideProgressBar: false,
@@ -136,7 +136,7 @@ const Contact = () => {
                   data-original="#000000" />
               </svg>
               <a href="javascript:void(0)" className="text-current text-sm ml-3">
-                info@example.com
+                admin@nextdrive.com
               </a>
             </li>
             <li className="flex items-center text-yellow-400">
@@ -147,14 +147,14 @@ const Contact = () => {
                   data-original="#000000"></path>
               </svg>
               <a href="javascript:void(0)" className="text-current text-sm ml-3">
-                +158 996 888
+                +91 9999999999
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="z-10 relative h-full max-md:min-h-[350px]">
-          <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        <div className="z-10 relative h-full hidden md:flex max-md:min-h-[350px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.82162352453!2d77.09323125!3d28.6440836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1737221752639!5m2!1sen!2sin"
             className="left-0 top-0 h-full w-full" frameBorder="0"
             ></iframe>
         </div>
@@ -164,3 +164,5 @@ const Contact = () => {
   )
 }
 export default Contact
+
+
