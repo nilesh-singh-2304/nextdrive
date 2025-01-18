@@ -35,6 +35,17 @@ const Contact = () => {
       return;
     }
 
+    const b = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/query` , {
+      name : name,
+      email : email,
+      phone : phone,
+      projbudget : projbudget,
+      projDeadline : projDeadline,
+      message : message
+    })
+
+    const ress = await b.data;
+
     const a = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/email`, {
           name : name,
           email : email,
@@ -44,7 +55,7 @@ const Contact = () => {
           message : message
         });
         const res = await a.data;
-        if (res.success) {
+        if (res.success && ress.success) {
             toast.success("Query Submitted", {
                 position: "bottom-right",
                 autoClose: 1500,

@@ -8,7 +8,7 @@ const handler = async (
     res: NextApiResponse,
   )=> {
     if(req.method == 'POST'){
-        console.log(req.body)
+        // console.log(req.body)
         
         if(req.body.mdt == 'add'){
           const p = new blog({
