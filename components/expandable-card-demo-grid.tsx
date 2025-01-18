@@ -211,16 +211,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          At NextDrive, we specialize in crafting responsive, scalable, and innovative websites tailored to meet the unique needs of our clients. Our approach combines creative design with the latest web technologies to deliver websites that not only look stunning but also function seamlessly across devices. Whether it’s building a dynamic e-commerce platform, a corporate website, or a custom web application, our team ensures that every project is optimized for performance, security, and usability. We prioritize user experience, ensuring that your visitors enjoy a smooth, engaging journey every time they interact with your site. From concept to launch, our development process is collaborative, ensuring that we bring your vision to life while providing technical expertise to drive business growth.
         </p>
       );
     },
@@ -234,15 +225,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Our app development services focus on building high-performance mobile applications for both Android and iOS platforms. We understand the increasing demand for seamless mobile experiences, and we deliver robust, user-friendly apps that provide real-time functionality and intuitive design. Our team works with the latest tools and technologies to create apps that meet industry standards, ensuring fast loading times, smooth navigation, and high-level security. Whether you're creating a mobile solution for a startup or enhancing an existing app, we offer end-to-end development services—from ideation and prototyping to coding, testing, and maintenance. We take a user-centric approach to ensure that your app not only looks great but also delivers an exceptional experience, ensuring that it stands out in a competitive marketplace.
         </p>
       );
     },
@@ -257,15 +240,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+          Our UI/UX design services are driven by the goal of creating seamless, visually captivating user experiences that delight users and meet business objectives. We believe that great design goes beyond aesthetics—it’s about creating intuitive, easy-to-use interfaces that engage users and enhance their interactions. Our team of experienced designers works closely with you to understand your target audience, business goals, and brand identity, crafting custom designs that resonate with users. From wireframes and prototypes to high-fidelity designs, we ensure that every design element is aligned with your vision and user needs. By focusing on both usability and visual appeal, we create interfaces that not only look beautiful but also ensure effortless navigation, driving higher engagement and conversions for your website or app.
         </p>
       );
     },
@@ -279,15 +254,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Our comprehensive SEO services are designed to help your website rank higher in search engine results and attract targeted organic traffic. We employ a combination of on-page, off-page, and technical SEO strategies to optimize every aspect of your website, ensuring it meets the latest search engine algorithms and best practices. From keyword research and content optimization to improving page load speeds and enhancing mobile usability, we take a holistic approach to SEO. We also focus on building high-quality backlinks, enhancing your site’s authority, and improving its credibility. Our SEO specialists track the performance of your website and refine strategies to adapt to changing search engine trends, ensuring that your site consistently performs well. By improving your search engine rankings, we help increase visibility, drive traffic, and ultimately, improve conversions, helping your business grow in the digital landscape.
         </p>
       );
     },
@@ -301,15 +268,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          At NextDrive, we offer end-to-end digital marketing services designed to connect your business with the right audience through targeted online campaigns. Our strategies include social media marketing, content marketing, search engine advertising (Google Ads), email campaigns, and more, all customized to align with your goals and objectives. We leverage the power of data analytics to track the performance of each campaign, adjusting strategies to maximize results and return on investment. Our team of marketing experts works closely with you to craft compelling messaging, creative assets, and marketing funnels that engage and convert your audience. Whether you are looking to increase brand awareness, drive sales, or build customer loyalty, our digital marketing services ensure that you are not just reaching the right people but also creating meaningful interactions that drive growth for your business. We combine creativity with measurable results, making sure every campaign is aligned with your unique business needs and goals.
         </p>
       );
     },
