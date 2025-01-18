@@ -68,7 +68,7 @@ const Footer = () => {
     
       }
   return (
-    <footer className="bg-gradient-to-r overflow-x-hidden via-yellow-300 via-20% from-black to-black pt-12 pb-8 px-10 font-sans tracking-wide">
+    <footer className="bg-gradient-to-t overflow-x-hidden via-yellow-300 via-20% from-black to-black pt-12 pb-8 px-10 font-sans tracking-wide">
       <div className="max-w-screen-xl mx-auto">
 
 

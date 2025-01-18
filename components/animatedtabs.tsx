@@ -9,7 +9,7 @@ export function TabsDemo() {
       title: "Product",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-black via-yellow-300 via-20% to-black">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black border border-gray-800 bg-gradient-to-b from-black via-yellow-300 via-20% to-black">
           <p>Product Tab</p>
           <DummyContent />
         </div>
@@ -19,7 +19,7 @@ export function TabsDemo() {
       title: "Services",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-black via-yellow-300 via-20% to-black">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black border border-gray-800 bg-gradient-to-b from-black via-yellow-300 via-20% to-black">
           <p>Services tab</p>
           <DummyContent />
         </div>
@@ -29,7 +29,7 @@ export function TabsDemo() {
       title: "Playground",
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-black via-yellow-300 via-20% to-black">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black border border-gray-800 bg-gradient-to-b from-black via-yellow-300 via-20% to-black">
           <p>Playground tab</p>
           <DummyContent />
         </div>
@@ -39,7 +39,7 @@ export function TabsDemo() {
       title: "Content",
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-black via-yellow-300 via-20% to-black">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black border border-gray-800 bg-gradient-to-b from-black via-yellow-300 via-20% to-black">
           <p>Content tab</p>
           <DummyContent />
         </div>
@@ -49,7 +49,7 @@ export function TabsDemo() {
       title: "Random",
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-black via-yellow-300 via-20% to-black">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-black border border-gray-800 bg-gradient-to-b from-black via-yellow-300 via-20% to-black">
           <p>Random tab</p>
           <DummyContent />
         </div>

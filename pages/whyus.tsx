@@ -1,5 +1,6 @@
 import React from 'react'
 import { AnimatedListDemo } from '@/components/animated'
+import Link from 'next/link'
 
 const Whyus = () => {
   return (
@@ -8,10 +9,10 @@ const Whyus = () => {
       <div className="md:max-w-5xl max-w-xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="text-left">
-            <h2 className="text-gray-50 text-3xl font-bold mb-4">Elevate Your Online Presence</h2>
-            <p className="mb-4 text-xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper mauris, non aliquam nisi purus vel nisl. Integer efficitur turpis in bibendum tincidunt.</p>
-            <p className="text-xl text-gray-500">Nulla facilisi. Vestibulum fringilla leo et purus consectetur, vel tincidunt dolor rhoncus. In hac habitasse platea dictumst. Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat nisi.</p>
-            <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-400">Get started</button>
+            <h2 className="text-gray-50 text-3xl font-bold mb-4">Cutting-Edge Technologies for Superior Solutions</h2>
+            <p className="mb-4 text-xl text-gray-500">At our company, we pride ourselves on leveraging the most advanced and modern technologies to deliver unparalleled results. Our solutions are crafted using tools and platforms that are designed for today’s fast-paced digital landscape, ensuring your business remains ahead of the curve. </p>
+            <p className="text-xl text-gray-500">By adopting emerging technologies, we not only meet your current needs but also future-proof your digital presence, giving you a distinct edge over competitors.</p>
+            <Link href={'/services'}> <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-black text-sm tracking-wider font-medium border border-current outline-none bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-400">Get started</button></Link>
           </div>
           <div className="max-h-72">
             <img src="https://readymadeui.com/management-img.webp" alt="Placeholder Image" className="rounded-lg object-contain w-full h-full" />
@@ -23,26 +24,25 @@ const Whyus = () => {
             <AnimatedListDemo />
           </div>
           <div className="text-left pt-10">
-            <h2 className="text-gray-50 text-3xl font-bold mb-4">Your Success, Our Commitment</h2>
-            <p className="mb-4 text-xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper mauris, non aliquam nisi purus vel nisl. Integer efficitur turpis in bibendum tincidunt.</p>
-            <p className="text-xl text-gray-500">Nulla facilisi. Vestibulum fringilla leo et purus consectetur, vel tincidunt dolor rhoncus. In hac habitasse platea dictumst. Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat nisi.</p>
-            <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-white text-sm tracking-wider font-medium border border-current outline-none bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-400">Get started</button>
+            <h2 className="text-gray-50 text-3xl font-bold mb-4">Innovation Over Tradition</h2>
+            <p className="mb-4 text-xl text-gray-500">We are committed to breaking away from the confines of traditional, outdated platforms like WordPress and Shopify. While these tools may be popular, they often come with limitations that hinder growth and scalability. Instead, we focus on creating bespoke solutions tailored to your unique requirements. This approach enables us to design experiences that are not only innovative but also seamlessly align with your brand’s vision and objectives.</p>
+            <Link href={'/services'}> <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-black text-sm tracking-wider font-medium border border-current outline-none bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-400">Get started</button></Link>
           </div>
         </div>
       </div>
     </div>
 
 
-    <div className="font-sans my-28 p-4">
+    <div className="font-sans my-28 mt-48 p-4">
       <div className="md:max-w-5xl max-w-lg mx-auto">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="max-w-sm">
-            <h2 className="text-gray-600 text-3xl font-semibold mb-4 leading-10">Innovative Solutions for Modern Challenges, <br /> Your Success, Our Commitment</h2>
+            <h2 className="text-gray-100 text-3xl font-bold mb-4 leading-10"> Tailored Solutions for Unique Challenges, <br />Uncompromising Performance and Scalability</h2>
           </div>
           <div className="text-left">
-            <p className="mb-4 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, ipsum vel iaculis bibendum, justo turpis ullamcorper mauris, non aliquam nisi purus vel nisl. Integer efficitur turpis in bibendum tincidunt.</p>
-            <p className="text-sm text-gray-500">Nulla facilisi. Vestibulum fringilla leo et purus consectetur, vel tincidunt dolor rhoncus. In hac habitasse platea dictumst. Fusce vel sodales elit. Suspendisse potenti. Sed eget consequat nisi.</p>
-            <button type="button" className="mt-6 px-5 py-2.5 rounded-md text-white text-sm tracking-wider font-medium border border-current outline-none bg-blue-700 hover:bg-blue-800 active:bg-blue-700">Get started</button>
+            <p className="mb-4 text-lg text-gray-500">Every business is unique, and so are the challenges it faces. That’s why we take a personalized approach to every project, designing solutions that address your specific needs. Our team of experts works closely with you to understand your goals, ensuring that the final product is a perfect fit. By avoiding one-size-fits-all platforms, we ensure that your solution is as unique as your business.</p>
+            <p className="text-lg text-gray-500">Modern businesses demand solutions that can grow with them. By utilizing state-of-the-art technologies, we deliver products that are not only high-performing but also scalable.</p>
+            <Link href={'/services'}> <button type="button" className="mt-6 px-5 py-2.5 rounded-full text-black text-sm tracking-wider font-medium border border-current outline-none bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-400">Get started</button></Link>
           </div>
         </div>
 
@@ -56,8 +56,8 @@ const Whyus = () => {
               </g>
             </svg>
             <div className="mt-4">
-              <h3 className="text-lg font-bold text-gray-600 mb-2">Fresh Insights</h3>
-              <p className="text-gray-500 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum reprehenderit in voluptate velit esse cillum dolore...</p>
+              <h3 className="text-xl font-bold text-gray-100 mb-2">Future-Ready Digital Experiences</h3>
+              <p className="text-gray-500 text-lg">The digital world is constantly evolving, and staying ahead requires foresight and adaptability. Our commitment to innovation means that the solutions we provide are designed with the future in mind. </p>
             </div>
           </div>
 
@@ -73,8 +73,8 @@ const Whyus = () => {
               </g>
             </svg>
             <div className="mt-4">
-              <h3 className="text-lg font-bold text-gray-600 mb-2">Trending Now</h3>
-              <p className="text-gray-500 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum reprehenderit in voluptate velit esse cillum dolore...</p>
+              <h3 className="text-xl font-bold text-gray-100 mb-2">Enhanced Security and Reliability</h3>
+              <p className="text-gray-500 text-lg">Outdated platforms often come with inherent security vulnerabilities and limitations. By adopting cutting-edge technologies, we offer solutions that are not only more secure but also more reliable.</p>
             </div>
           </div>
 
@@ -97,8 +97,8 @@ const Whyus = () => {
                 data-original="#2196f3" />
             </svg>
             <div className="mt-4">
-              <h3 className="text-lg font-bold text-gray-600 mb-2">Daily Highlights</h3>
-              <p className="text-gray-500 text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum reprehenderit in voluptate velit esse cillum dolore...</p>
+              <h3 className="text-xl font-bold text-gray-100 mb-2">A Partner in Your Success</h3>
+              <p className="text-gray-500 text-lg">Choosing us means choosing a partner dedicated to your success. Our commitment to excellence, innovation, and client satisfaction sets us apart. We don’t just deliver projects; we build relationships. </p>
             </div>
           </div>
         </div>

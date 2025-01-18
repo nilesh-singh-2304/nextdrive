@@ -77,7 +77,7 @@ export default function ExpandableCardDemo() {
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg "
                 />
               </motion.div>
 
@@ -134,7 +134,7 @@ export default function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col bg-slate-300 hover:bg-slate-500 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col bg-black text-white hover:text-black border border-gray-800 hover:border-yellow-400  hover:bg-gradient-to-t hover:from-black hover:via-yellow-500 hover:to-black transition ease-in-out rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -149,13 +149,13 @@ export default function ExpandableCardDemo() {
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 text-center md:text-left text-base"
+                  className="font-bold text-center text-base"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-900 text-center md:text-left text-base"
+                  className=" text-center mt-4 text-xs"
                 >
                   {card.description}
                 </motion.p>
@@ -203,9 +203,9 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    description: "Designing responsive, scalable, and innovative websites",
+    title: "Web Development",
+    src: "https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -226,9 +226,9 @@ const cards = [
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    description: "Building high-performance mobile applications for Android and iOS platforms",
+    title: "App Development",
+    src: "https://api.reliasoftware.com/uploads/the_complete_guide_to_mobile_app_development_2021_ded2abd1b1.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -249,9 +249,9 @@ const cards = [
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    description: "Creating seamless, visually captivating user experiences and interfaces.",
+    title: "UI/UX Design",
+    src: "https://techamdavad.com/web/image/product.template/50/image_1920?unique=82609a7",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -271,9 +271,31 @@ const cards = [
     },
   },
   {
-    description: "Lord Himesh",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    description: "Optimizing websites to achieve superior search engine rankings.",
+    title: "Search Engine Optimization (SEO)",
+    src: "https://www.flatworldsolutions.com/featured-images/search-engine-optimization-services.jpg",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Himesh Reshammiya, a renowned Indian music composer, singer, and
+          actor, is celebrated for his distinctive voice and innovative
+          compositions. Born in Mumbai, India, he has become a prominent figure
+          in the Bollywood music industry. <br /> <br /> His songs often feature
+          a blend of contemporary and traditional Indian music, capturing the
+          essence of modern Bollywood soundtracks. With a career spanning over
+          two decades, Himesh Reshammiya has released numerous hit albums and
+          singles that have garnered him a massive fan following both in India
+          and abroad.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Crafting and executing impactful online marketing strategies.",
+    title: "Digital Marketing",
+    src: "https://img.freepik.com/premium-vector/digital-marketing-technology-concept_31543-191.jpg",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {

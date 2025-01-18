@@ -1,5 +1,7 @@
 "use client";
-
+import { FaSchool , FaHospital , FaHotel  } from "react-icons/fa";
+import { PiOfficeChairBold,PiAmazonLogoFill } from "react-icons/pi";
+import { GiGymBag } from "react-icons/gi";
 import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
@@ -37,6 +39,7 @@ export function AnimatedBeamMultipleOutputDemo({
   const div5Ref = useRef<HTMLDivElement>(null);
   const div6Ref = useRef<HTMLDivElement>(null);
   const div7Ref = useRef<HTMLDivElement>(null);
+  const div8Ref = useRef<HTMLDivElement>(null);
 
   return (
     <div
@@ -48,25 +51,17 @@ export function AnimatedBeamMultipleOutputDemo({
     >
       <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
         <div className="flex flex-col justify-center gap-2">
-          <Circle ref={div1Ref}>
-            <Icons.googleDrive />
-          </Circle>
-          <Circle ref={div2Ref}>
-            <Icons.googleDocs />
-          </Circle>
-          <Circle ref={div3Ref}>
-            <Icons.whatsapp />
-          </Circle>
-          <Circle ref={div4Ref}>
-            <Icons.messenger />
-          </Circle>
-          <Circle ref={div5Ref}>
-            <Icons.notion />
-          </Circle>
+          <div className="flex flex-col justify-center items-center" ref={div1Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><FaHospital  className="size-7 hover:text-yellow-400" /></div> </div>
+          <div className="flex flex-col justify-center items-center" ref={div2Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><FaSchool className="size-7 hover:text-yellow-400" /> </div></div>
+          <div className="flex flex-col justify-center items-center" ref={div3Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><FaHotel className="size-7 hover:text-yellow-400" /></div> </div>
+          <div className="flex flex-col justify-center items-center" ref={div4Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><GiGymBag className="size-7 hover:text-yellow-400" /></div></div>
+          <div className="flex flex-col justify-center items-center" ref={div5Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><PiOfficeChairBold className="size-7 hover:text-yellow-400" /></div> </div>
+          <div className="flex flex-col justify-center items-center" ref={div8Ref}><div className="border border-gray-600 hover:border-yellow-400 hover:scale-125 transition ease-linear rounded-full w-14 h-14 flex justify-center items-center -translate-x-3 mb-1"><PiAmazonLogoFill className="size-7 hover:text-yellow-400" /></div> </div>
+          
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16">
-            <Icons.openai />
+          <Circle ref={div6Ref} className="size-16 object-cover">
+            <img src="https://nextdriveindia.com/_next/image/?url=%2Fassets%2Fimages%2Ficon2.png&w=96&q=75" className="scale-150" alt="" />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
@@ -84,6 +79,11 @@ export function AnimatedBeamMultipleOutputDemo({
       <AnimatedBeam
         containerRef={containerRef}
         fromRef={div2Ref}
+        toRef={div6Ref}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div8Ref}
         toRef={div6Ref}
       />
       <AnimatedBeam

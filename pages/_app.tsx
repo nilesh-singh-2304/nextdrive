@@ -8,7 +8,7 @@ import Navbar from "@/components/navbar";
 export default function App({ Component, pageProps }: AppProps) {
   return (
   <>
-  <PagesTopLoader />
+  <PagesTopLoader color="#FFC000" />
   <div className="flex md:hidden"><Navbar /></div>
      {/* <Navbar /> */}
      <ToastContainer

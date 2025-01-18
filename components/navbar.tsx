@@ -1,8 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 pb-2">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -22,14 +23,19 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
+        <li className='hover:text-yellow-300'><Link href={'/services'}>Services</Link></li>
+        <li className='hover:text-yellow-300'><Link href={'/portfolio'}>Portfolio</Link></li>
+        <li className='hover:text-yellow-300'><Link href={'/blogs'}>Blogs</Link></li> 
+        <li className='hover:text-yellow-300'><Link href={'/contact'}>Contact</Link></li> 
+        <li className='hover:text-yellow-300'><Link href={'/admin'}>Admin</Link></li> 
+        <li className='hover:text-yellow-300'><Link href={'/whyus'}>Why Us</Link></li> 
       </ul>
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <Link href={"/"} className="btn btn-ghost text-xl">
+      <img src="https://nextdriveindia.com/_next/image/?url=%2Fassets%2Fimages%2Ficon2.png&w=96&q=75" className='rounded-xl ' height={700} width={70} alt="" />
+    </Link>
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">

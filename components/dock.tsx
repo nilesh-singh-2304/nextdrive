@@ -34,7 +34,7 @@ export function FloatingDockDemo() {
     {
       title: "Home",
       icon: (
-        <FaHome/>
+        <FaHome className="text-yellow-300"/>
       ),
       href: "/",
     },

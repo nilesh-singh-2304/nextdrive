@@ -39,8 +39,8 @@ export function IconCloudDemo() {
   );
 
   return (
-    <div className="flex w-full justify-center items-center">
-        <div className="relative scale-150 flex size-full  max-w-lg items-center justify-center overflow-hidden rounded-lg  bg-background">
+    <div className="flex w-auto justify-center items-center">
+        <div className="relative scale-150 flex size-full  max-w-auto items-center justify-center overflow-hidden rounded-lg ">
       <IconCloud images={images} />
     </div>
     </div>
