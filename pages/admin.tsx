@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 const Admin = ({ blogs }) => {
   const [title, setTitle] = useState("");
-  const [blogid, setblogid] = useState("")
+  const [blogid, setblogid] = useState("");
   const router = useRouter();
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
@@ -19,10 +19,10 @@ const Admin = ({ blogs }) => {
   console.log(blogss);
 
   useEffect(() => {
-    if(localStorage.getItem("token") != "admin"){
-      router.push("/login")
+    if (localStorage.getItem("token") != "admin") {
+      router.push("/login");
     }
-  }, [])
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ const Admin = ({ blogs }) => {
       category: category,
       image: image,
       email: email,
-      id : blogid,
+      id: blogid,
       mdt: "edit",
     });
     const res = await a.data;
@@ -64,11 +64,11 @@ const Admin = ({ blogs }) => {
     router.reload();
   };
 
-  const dltblg = async(e) => {
+  const dltblg = async (e) => {
     e.preventDefault();
     const a = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/add`, {
-      id : blogid,
-      mdt: "delete"
+      id: blogid,
+      mdt: "delete",
     });
     const res = await a.data;
     if (res.success) {
@@ -96,7 +96,7 @@ const Admin = ({ blogs }) => {
 
       router.reload();
     }
-  }
+  };
 
   const logout = () => {
     localStorage.removeItem("token");
@@ -108,12 +108,14 @@ const Admin = ({ blogs }) => {
       <div className="h-screen">
         <div className="relative pt-32 px-10 overflow-x-auto shadow-md sm:rounded-xl">
           <div className="flex">
-          <div className="my-10">
-            <Add />
-          </div>
-          <div>
-            <button onClick={logout} className="btn my-10 ml-5">Logout</button>
-          </div>
+            <div className="my-10">
+              <Add />
+            </div>
+            <div>
+              <button onClick={logout} className="btn my-10 ml-5">
+                Logout
+              </button>
+            </div>
           </div>
           <table className="w-full text-sm text-left rtl:text-right :text-gray-400">
             <thead className="text-xs  uppercase bg-gray-700 text-gray-400">
@@ -156,10 +158,27 @@ const Admin = ({ blogs }) => {
                   <td className="px-6 py-4 text-right">
                     {/* The button to open modal */}
                     {/* The button to open modal */}
-                    <button onClick={() => {setTitle(blog.title);setblogid(blog._id);setDescription(blog.description);setCategory(blog.category);setImage(blog.imageurl);setEmail(blog.author);console.log(blogid,title,description,category,image,email)}}>
-                    <label htmlFor={`my_modal_${blog._id}`} className="btn">
-                      open modal
-                    </label>
+                    <button
+                      onClick={() => {
+                        setTitle(blog.title);
+                        setblogid(blog._id);
+                        setDescription(blog.description);
+                        setCategory(blog.category);
+                        setImage(blog.imageurl);
+                        setEmail(blog.author);
+                        console.log(
+                          blogid,
+                          title,
+                          description,
+                          category,
+                          image,
+                          email
+                        );
+                      }}
+                    >
+                      <label htmlFor={`my_modal_${blog._id}`} className="btn">
+                        open modal
+                      </label>
                     </button>
 
                     {/* Put this part before </body> tag */}
@@ -284,22 +303,36 @@ const Admin = ({ blogs }) => {
                     </div>
                   </td>
                   <td className="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  <div onClick={() => setblogid(blog._id)} className="btn">
-                  <label htmlFor={`${blog._id}`} className="btn">Delete</label>
-                  </div>
+                    <div onClick={() => setblogid(blog._id)} className="btn">
+                      <label htmlFor={`${blog._id}`} className="btn">
+                        Delete
+                      </label>
+                    </div>
 
-{/* Put this part before </body> tag */}
-<input type="checkbox" id={`${blog._id}`} className="modal-toggle" />
-<div className="modal" role="dialog">
-  <div className="modal-box">
-    <h3 className="text-lg text-gray-50 font-bold">Delete!</h3>
-    <p className="py-4 text-gray-100">Click Confirm to delete</p>
-    <div className="modal-action">
-      <label onClick={dltblg} className="btn">Confirm</label>
-      <label htmlFor={`${blog._id}`} className="btn">Close!</label>
-    </div>
-  </div>
-</div>
+                    {/* Put this part before </body> tag */}
+                    <input
+                      type="checkbox"
+                      id={`${blog._id}`}
+                      className="modal-toggle"
+                    />
+                    <div className="modal" role="dialog">
+                      <div className="modal-box">
+                        <h3 className="text-lg text-gray-50 font-bold">
+                          Delete!
+                        </h3>
+                        <p className="py-4 text-gray-100">
+                          Click Confirm to delete
+                        </p>
+                        <button type="submit" onClick={dltblg} className="btn">
+                          Confirm
+                        </button>
+                        <div className="modal-action">
+                          <label htmlFor={`${blog._id}`} className="btn">
+                            Close!
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                   </td>
                 </tr>
               ))}
