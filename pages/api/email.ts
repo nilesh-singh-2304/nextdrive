@@ -1,7 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
-import query from "@/model/query";
-import connectDB from "@/middleware/mongoose";
 
 const resend = new Resend("re_DJuP9erZ_C2mCpbXYx9mG9SNWuokZsZo4");
 
